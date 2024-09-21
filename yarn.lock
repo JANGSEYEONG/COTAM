@@ -1771,6 +1771,11 @@ functions-have-names@^1.2.3:
   resolved "https://registry.yarnpkg.com/functions-have-names/-/functions-have-names-1.2.3.tgz#0404fe4ee2ba2f607f0e0ec3c80bae994133b834"
   integrity sha512-xckBUXyTIqT97tq2x2AMb+g163b5JFysYk0x4qxNFwbfQkmNZoiRHb6sPzI9/QV33WeuvVYBUIiD4NzNIyqaRQ==
 
+galmuri@^2.39.4:
+  version "2.39.4"
+  resolved "https://registry.yarnpkg.com/galmuri/-/galmuri-2.39.4.tgz#040fc98bbc555518842a337d72d334c1184c6c1e"
+  integrity sha512-v+8w4uFICnBIAGMQKPAC3DabUEE91kSc82V0MyTokDObmPmXYH0YJamRSf+0m2n6hCw4z+gHx0zyTym/3IsKiA==
+
 get-caller-file@^2.0.5:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/get-caller-file/-/get-caller-file-2.0.5.tgz#4f94412a82db32f36e3b0b9741f8a97feb031f7e"

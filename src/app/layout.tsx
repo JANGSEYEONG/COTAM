@@ -1,8 +1,24 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import localFont from 'next/font/local';
+import 'galmuri/dist/galmuri.css';
 import './globals.css';
 
-const inter = Inter({ subsets: ['latin'] });
+const galmuri = localFont({
+  src: [
+    {
+      path: '../../public/assets/fonts/Galmuri11.woff2',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../../public/assets/fonts/Galmuri11-Bold.woff2',
+      weight: '700',
+      style: 'normal',
+    },
+  ],
+  display: 'swap',
+  variable: '--font-galmuri',
+});
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -15,8 +31,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="ko">
+      <body className={galmuri.variable}>{children}</body>
     </html>
   );
 }
