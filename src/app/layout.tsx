@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
-import 'galmuri/dist/galmuri.css';
 import './globals.css';
 
 const galmuri = localFont({
