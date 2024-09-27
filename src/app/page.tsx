@@ -1,8 +1,16 @@
+import ArrowUpBlue from '../../public/assets/icons/ArrowUpBlue.svg';
+import WarningBlue from '../../public/assets/icons/WarningBlue.svg';
+
 export default function Home() {
   return (
     <main className="flex min-h-screen gap-6 p-24">
       <div>
         <h2>Pretendard Typography</h2>
+        <div className="flex gap-3">
+          <ArrowUpBlue className="w-3" />
+          <ArrowUpBlue className="w-4" />
+          <WarningBlue className="w-5" />
+        </div>
         <hr />
         <p className="pretandard-title-1">코탐에서 함께 성장해요!</p>
         <p className="pretandard-title-2">코탐에서 함께 성장해요!</p>
