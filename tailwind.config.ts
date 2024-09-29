@@ -44,6 +44,7 @@ const config: Config = {
           80: '#3C25AE',
           90: '#342689',
           95: '#201650',
+          100: '#08072D',
         },
         'cotam-gray': {
           5: '#F6F6F9',
@@ -75,6 +76,11 @@ const config: Config = {
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
+        },
+        '.bg-pixel-gradient': {
+          backgroundImage: "url('/assets/background/PixelGradient.png')",
+          backgroundRepeat: 'repeat-x',
+          backgroundPosition: 'bottom',
         },
       };
       addUtilities(newUtilities);
