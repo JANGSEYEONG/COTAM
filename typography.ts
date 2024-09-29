@@ -152,6 +152,12 @@ const typographyStyles = {
     lineHeight: '24px',
     letterSpacing: '-0.2px',
   },
+  '.galmuri11-body-2-bold': {
+    fontWeight: 'bold',
+    fontSize: '15px',
+    lineHeight: '24px',
+    letterSpacing: '-0.2px',
+  },
   '.galmuri11-body-3': {
     fontWeight: 'normal',
     fontSize: '14px',
