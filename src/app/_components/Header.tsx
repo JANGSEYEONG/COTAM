@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 import Cotam from '../../../public/assets/logo/Cotam.svg';
-import Hamburger from '../../../public/assets/icons/Hamburger.svg';
+import MenuButton from '@/components/common/MenuButton';
 import { ROUTES } from '@/constants/routes';
 
 const Header = () => {
@@ -26,7 +26,7 @@ const Header = () => {
       </ul>
 
       {/* 모바일 햄버거 메뉴 (lg 미만에서만 표시) */}
-      <Hamburger className="h-6 w-6 cursor-pointer lg:hidden" />
+      <MenuButton className="lg:hidden" pathname={pathname} />
     </header>
   );
 };
