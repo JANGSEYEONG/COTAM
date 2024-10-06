@@ -31,6 +31,18 @@ export const playerList = [
     description: '제인입니다',
   },
   {
+    name: 'hero',
+    position: 'manager',
+    job: 'Front-End',
+    description: '나는야 영웅',
+  },
+  {
+    name: 'Jane',
+    position: 'manager',
+    job: 'Front-End',
+    description: '제인입니다',
+  },
+  {
     name: 'Jane',
     position: 'manager',
     job: 'Front-End',

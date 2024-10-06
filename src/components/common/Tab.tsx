@@ -19,7 +19,7 @@ const Tab = ({ tabList, selectedTab, onTabChange }: Props) => {
   };
 
   return (
-    <ul className="flex w-full items-center justify-start gap-6">
+    <ul className="flex items-center gap-6">
       {tabList.map((tab) => (
         <li
           key={tab.index}
