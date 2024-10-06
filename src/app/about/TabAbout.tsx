@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import BookRed from '../../../public/assets/icons/BookRed.svg';
 
@@ -9,13 +9,20 @@ import TimeTable from '@/components/common/TimeTable';
 import DescriptionCard from '@/components/common/DescriptionCard';
 
 import { activityList, studyProgressMethodList, tabList } from './constants';
+import CountUp from 'react-countup';
 
+const STUDY_COUNT = 43;
 const TabAbout = () => {
   const [selectedTab, setSelectedTab] = useState(0);
+  const [isCSR, setIsCSR] = useState(false);
 
   const handleTabChange = (index: number) => {
     setSelectedTab(index);
   };
+
+  useEffect(() => {
+    setIsCSR(true); // 클라이언트에서만 true로 변경
+  }, []);
 
   return (
     <main className="flex w-full flex-col gap-y-10">
@@ -30,7 +37,14 @@ const TabAbout = () => {
               <BookRed className="h-8 w-8" />
               <span className="text-cotam-blue-40 galmuri11-body-l">SCORE</span>
             </div>
-            <span className="text-cotam-red-50 galmuri11-headline-3">40</span>
+            <span className="text-cotam-red-50 galmuri11-headline-3">
+              <CountUp
+                start={isCSR ? 0 : STUDY_COUNT}
+                end={STUDY_COUNT}
+                duration={2}
+                separator=","
+              />
+            </span>
           </section>
 
           <section

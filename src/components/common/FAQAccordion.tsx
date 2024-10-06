@@ -6,7 +6,7 @@ import { useReducer } from 'react';
 interface Props {
   className?: string;
   questionText: string;
-  answerText: string;
+  answerText: React.ReactNode;
 }
 
 const FAQAccordion = ({ className, questionText, answerText }: Props) => {
@@ -34,7 +34,9 @@ const FAQAccordion = ({ className, questionText, answerText }: Props) => {
         <div className="my-[12px] h-[1px] w-full bg-cotam-gray-10" />
         <div className="items-top flex flex-row gap-2">
           <span className="min-w-fit font-bold text-cotam-blue-50 galmuri11-body-2-bold">A .</span>
-          <p className="w-[210px] text-cotam-gray-80 pretandard-body-3 md:w-[90%]">{answerText}</p>
+          <div className="whitespace-pre-line pr-2 text-cotam-gray-80 pretandard-body-3">
+            {answerText}
+          </div>
         </div>
       </div>
 

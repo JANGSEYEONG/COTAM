@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import CountUp from 'react-countup';
 import ImageBox from './ImageBox';
 import LinkButton from './LinkButton';
+import { ROUTES } from '@/constants/routes';
 
 interface DescriptionBoxProps {
   icon: string;
@@ -58,7 +59,7 @@ const AboutCotam = ({ isVisible }: Props) => {
           <ImageBox />
         </div>
       </div>
-      <LinkButton href="/about" label="코탐 더 알아보기 ⇨" />
+      <LinkButton href={ROUTES.ABOUT.PATH} label="코탐 더 알아보기 ⇨" />
     </section>
   );
 };

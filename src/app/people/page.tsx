@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
-import HumanRed from '../../../public/assets/icons/HumanRed.svg';
 import { playerList, positionMap } from './constants';
+import PeopleCount from './_components/PeopleCount';
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -11,15 +11,9 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function People() {
   return (
     <main className="box-border flex min-h-screen w-full flex-col gap-y-10 p-10 lg:w-[1024px]">
-      <h1 className="whitespace-pre-line galmuri11-headline-1">{`코탐과 함꼐하는\n사람들`}</h1>
-      <section
-        aria-label="코탐 스터디원 수"
-        className="flex w-full items-center justify-between rounded-xl bg-cotam-blue-90 p-5">
-        <div className="flex items-center gap-2">
-          <HumanRed className="h-8 w-8" />
-          <span className="text-cotam-blue-40 galmuri11-body-l">PLAYER</span>
-        </div>
-        <span className="text-cotam-red-50 galmuri11-headline-3">31</span>
+      <h1 className="whitespace-pre-line text-white galmuri11-headline-1">{`코탐과 함께하는\n사람들`}</h1>
+      <section aria-label="코탐 스터디원 수">
+        <PeopleCount />
       </section>
 
       <section aria-label="스터디원 후기 리스트">
