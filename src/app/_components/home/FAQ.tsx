@@ -4,7 +4,7 @@ import Button from '@/components/common/Button';
 
 const FAQ = () => {
   return (
-    <section className="flex flex-col gap-10 py-[60px]">
+    <section className="flex flex-col gap-10 px-10 py-[60px]">
       <div className="flex items-center justify-between">
         <p className="text-white galmuri11-headline-3">자주 묻는 질문</p>
         <LinkButton className="text-cotam-red-60" href="/recruit" label="더보기 >" />

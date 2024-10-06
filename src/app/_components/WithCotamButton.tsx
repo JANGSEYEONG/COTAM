@@ -1,11 +1,13 @@
 import Button from '@/components/common/Button';
 import { ROUTES } from '@/constants/routes';
+import { ZIndex } from '@/constants/ui';
 import Link from 'next/link';
 
 const WithCotamButton = () => {
   return (
     <div className="relative flex w-full items-center">
-      <p className="absolute right-[-10px] top-[-10px] z-[100] rounded bg-cotam-blue-50 px-1 text-white galmuri11-body-5">
+      <p
+        className={`absolute right-[-10px] top-[-10px] rounded bg-cotam-blue-50 px-1 text-white galmuri11-body-5 ${ZIndex.home.firstLayer}`}>
         코탐은 지금 모집중!
       </p>
       <Link className="w-full" href={ROUTES.RECRUIT.PATH}>

@@ -41,6 +41,8 @@ export default function RootLayout({
       <body className={galmuri.variable}>
         <div className="relative bg-cotam-blue-100 flex-col-center">
           <Header />
+          {/* @TOFIX 추후 바꿔야함 */}
+          <div className="absolute top-[100vh] h-screen w-screen rotate-180 bg-pixel-gradient" />
           {children}
           <Footer />
         </div>

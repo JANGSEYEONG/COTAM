@@ -37,7 +37,7 @@ const AboutCotam = ({ isVisible }: Props) => {
   ];
   return (
     <section
-      className={`relative h-full bg-cotam-blue-100 pb-[60px] pt-20 ${ZIndex.home.secondLayer}`}>
+      className={`relative h-full w-full bg-cotam-blue-100 pb-[60px] pt-20 ${ZIndex.home.secondLayer} px-10`}>
       <BorderTop />
       <p className="mb-5 text-cotam-red-60 galmuri11-headline-1">코탐은?</p>
       <p className="mb-20 whitespace-pre-wrap text-cotam-blue-10 pretandard-body-1">

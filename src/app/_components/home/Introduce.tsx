@@ -4,7 +4,7 @@ import WithCotamButton from '../WithCotamButton';
 
 const Introduce = () => {
   return (
-    <section className="flex h-[calc(100dvh_-_56px)] flex-col justify-between pt-[210px] sm:h-[calc(100dvh_-_60px)] sm:pt-[102px] md:pt-[154px]">
+    <section className="flex h-[calc(100dvh_-_56px)] flex-col justify-between px-10 pt-[210px] sm:h-[calc(100dvh_-_60px)] sm:pt-[102px] md:pt-[154px]">
       <div className="absolute left-0 top-0 h-screen w-screen bg-pixel-gradient" />
       <div className="flex flex-col gap-4">
         <Image alt="메인아이콘" width={98} height={64} src={'/assets/image/main_icon.png'} />
