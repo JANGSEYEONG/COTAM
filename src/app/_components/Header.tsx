@@ -1,13 +1,11 @@
 'use client';
 
-import { cn } from '@/lib/utils';
-
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-
-import Cotam from '../../../public/assets/logo/Cotam.svg';
 import MenuButton from '@/components/common/MenuButton';
 import { ROUTES } from '@/constants/routes';
+import { cn } from '@/lib/utils';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import Cotam from '../../../public/assets/logo/Cotam.svg';
 
 const Header = () => {
   const pathname = usePathname();
