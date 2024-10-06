@@ -1,6 +1,8 @@
+import Image from 'next/image';
 import { Metadata } from 'next';
-import { playerList, positionMap } from './constants';
+
 import PeopleCount from './_components/PeopleCount';
+import { playerList, positionMap } from './constants';
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -18,16 +20,30 @@ export default function People() {
 
       <section aria-label="스터디원 후기 리스트">
         <ul className="flex flex-col gap-y-3 md:block md:columns-2">
-          {playerList.map(({ name, position, description, job }, index) => (
+          {playerList.map(({ name, position, description, imageUrl, job }, index) => (
             <li
               key={index}
               className="box-border flex h-fit w-full break-inside-avoid flex-col gap-y-4 rounded-xl bg-cotam-blue-95 p-4 md:mb-3">
               <article className="flex flex-col gap-y-5">
                 <header className="flex justify-between">
                   <div className="flex flex-row items-center gap-x-5">
-                    <span className="h-10 w-10 rounded bg-cotam-gray-30 flex-center">
-                      {name[0]}
-                    </span>
+                    {imageUrl ? (
+                      <figure className="relative h-10 w-10 overflow-hidden rounded">
+                        <Image
+                          priority
+                          src={imageUrl}
+                          alt={`${name} 이미지`}
+                          fill
+                          className="object-cover"
+                          sizes="100%"
+                        />
+                      </figure>
+                    ) : (
+                      <span className="h-10 w-10 rounded bg-cotam-gray-30 flex-center">
+                        {name[0]}
+                      </span>
+                    )}
+
                     <div className="flex flex-col">
                       <span className="text-white galmuri11-body-2-bold">{name}</span>
                       <span className="text-cotam-blue-40 galmuri11-body-5">{job}</span>
