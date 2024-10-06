@@ -6,15 +6,15 @@ import Hamburger from '../../../public/assets/icons/Hamburger.svg';
 import MenuDrawer from './MenuDrawer';
 
 interface MenuButtonProps extends React.HTMLAttributes<HTMLDivElement> {
-  className?: string;
   pathname: string;
+  className?: string;
 }
 
-const MenuButton = ({ className, pathname, ...props }: MenuButtonProps) => {
+const MenuButton = ({ pathname, className, ...props }: MenuButtonProps) => {
   const [isOpen, toggleIsOpen] = useReducer((prev) => !prev, false);
 
   return (
-    <div {...props} className={className}>
+    <div className={className} {...props}>
       <Hamburger className="h-6 w-6 cursor-pointer" onClick={toggleIsOpen} />
       <MenuDrawer isOpen={isOpen} onClose={toggleIsOpen} pathname={pathname} />
     </div>

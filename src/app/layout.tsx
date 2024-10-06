@@ -39,7 +39,7 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body className={galmuri.variable}>
-        <div className="relative overflow-x-hidden bg-cotam-blue-100 flex-col-center">
+        <div className="relative bg-cotam-blue-100 flex-col-center">
           <Header />
           {children}
           <Footer />
