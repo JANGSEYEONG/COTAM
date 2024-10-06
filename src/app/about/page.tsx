@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import TabAbout from './TabAbout';
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -7,5 +8,9 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default function About() {
-  return <main className="flex min-h-screen gap-6 p-24">코탐소개</main>;
+  return (
+    <main className="box-border flex min-h-screen w-full p-10 lg:w-[1024px]">
+      <TabAbout />
+    </main>
+  );
 }
