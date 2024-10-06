@@ -3,13 +3,13 @@ export const playerList = [
     name: 'MOSEUNG',
     position: 'leader',
     job: 'Front-End',
-    description: '모승입니다.',
+    description: '모승입니다',
   },
   {
     name: 'Lian',
     position: 'manager',
     job: 'Front-End',
-    description: '리안입니다.',
+    description: '안녕하세요! 프론트엔드 개발하고 있습니다!',
   },
   {
     name: 'Jane',
@@ -18,35 +18,41 @@ export const playerList = [
     description: '제인입니다',
   },
   {
-    name: 'Dummy',
+    name: '쿼카',
+    position: 'user',
+    job: 'Front-End',
+    description: "즐거운 개발자 쿼카입니다 '@'",
+  },
+  {
+    name: '혜림',
+    position: 'user',
+    job: 'Front-End',
+    description: `프론트엔드 주니어개발자 혜림입니다\n여행하면서 개발하는게 꿈이예요✨`,
+  },
+  {
+    name: '레코',
+    position: 'user',
+    job: 'Front-End',
+    description: '-',
+  },
+  {
+    name: 'Dara',
     position: 'user',
     job: 'Front-End',
     description:
-      '자기 개발은 목표를 설정하고 달성하기 위한 여정입니다. 이 블로그 포스트에서는 일상 생활에 쉽게 통합할 수 있는 5가지 핵심 습관을 소개합니다. 첫 번째는 목표 설정과 시간 관리입니다. 이는 개인적 성취와 전문적 성장을 위한 기초를 마련합니다. 두 번째 습관은 긍정적 사고를 통한 자기 격려입니다. 이는 도전을 극복하고 성공으로 나아가는 데 중요합니다. ',
+      '안녕하세요! 저는 다양한 주제에 대한 정보와 재미있는 대화를 좋아하는 모각코 멤버 Dara 에요.\n사람들과 소통하고 성장하는 것을 좋아해서 어색한 상황에서의 어려운 대화도 척척 진행할 수 있답니다 : )\n유머와 창의성은 약간 부족하지만 섬세함을 가지고 있어요. 제가 필요할 때 언제든지 ~ 무엇이든 마음을 터놓고 서로 물어보고 소통 해요',
   },
   {
-    name: 'Jane',
-    position: 'manager',
+    name: '클로이',
+    position: 'user',
     job: 'Front-End',
-    description: '제인입니다',
+    description: '-',
   },
   {
-    name: 'hero',
-    position: 'manager',
+    name: '로이스',
+    position: 'user',
     job: 'Front-End',
-    description: '나는야 영웅',
-  },
-  {
-    name: 'Jane',
-    position: 'manager',
-    job: 'Front-End',
-    description: '제인입니다',
-  },
-  {
-    name: 'Jane',
-    position: 'manager',
-    job: 'Front-End',
-    description: '제인입니다',
+    description: '3년차 백엔드 개발자입니다!',
   },
 ] as const;
 

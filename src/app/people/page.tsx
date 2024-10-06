@@ -41,7 +41,9 @@ export default function People() {
                   )}
                 </header>
 
-                <p className="text-cotam-blue-10 galmuri11-body-2">{description}</p>
+                <p className="whitespace-pre-line text-cotam-blue-10 galmuri11-body-2">
+                  {description}
+                </p>
               </article>
             </li>
           ))}
