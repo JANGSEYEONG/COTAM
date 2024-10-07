@@ -1,4 +1,6 @@
-export const FAQList = [
+import { STUDY_LEADER_LINKEDIN_URL } from './externalLinks';
+
+export const FAQ_ITEMS = [
   {
     question: '스터디에 참여하려면 관련 경력이 꼭 필요한가요?',
     answer:
@@ -26,17 +28,17 @@ export const FAQList = [
   {
     question: '이번 모집에 신청하지 못했어요. 모집 시기가 따로 있을까요?',
     answer: (
-      <div>
+      <span>
         {`스터디 모집은 일반적으로 3개월에 한 번 정도 진행되고 있어요. 그러나 인원이 줄어들 경우 상시로 모집을 오픈할 수 있어요!\n모집 공고는 스터디장인 `}
         <a
-          href="https://www.linkedin.com/in/%EC%8A%B9%EB%AA%A8-%EA%B9%80-848b2b242/?originalSubdomain=kr"
+          href={STUDY_LEADER_LINKEDIN_URL}
           target="_blank"
           rel="noopener noreferrer"
           className="font-bold text-cotam-blue-60 underline hover:text-cotam-blue-80">
           모승의 LinkedIn
         </a>
         {`을 통해 공유될 예정이니 관심 있으시다면 확인해 주세요.`}
-      </div>
+      </span>
     ),
   },
 ];

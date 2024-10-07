@@ -7,7 +7,7 @@ const Introduce = () => {
     <section className="flex h-[calc(100dvh_-_56px)] flex-col justify-between px-10 pt-[210px] sm:h-[calc(100dvh_-_60px)] sm:pt-[102px] md:pt-[154px]">
       <div className="absolute left-0 top-0 h-screen w-screen bg-pixel-gradient" />
       <div className="flex flex-col gap-4">
-        <Image alt="메인아이콘" width={98} height={64} src={'/assets/image/main_icon.png'} />
+        <Image alt="메인아이콘" width={98} height={64} src={'/assets/icons/MainIconRed.svg'} />
         <div className="whitespace-pre-wrap text-white pretandard-headline-1 sm:whitespace-nowrap">
           <p>{'열정적으로,\n때로는 자유롭게'}</p>
           <p>

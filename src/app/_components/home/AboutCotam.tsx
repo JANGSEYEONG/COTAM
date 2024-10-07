@@ -1,11 +1,15 @@
-import BorderTop from '@/components/common/BorderTop';
-import { ZIndex } from '@/constants/ui';
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
+
+import useIsCSR from '@/hooks/useIsCSR';
+
 import CountUp from 'react-countup';
 import ImageBox from './ImageBox';
 import LinkButton from './LinkButton';
+import BorderTop from '@/components/common/BorderTop';
+
+import { ZIndex } from '@/constants/ui';
 import { ROUTES } from '@/constants/routes';
+import { TOTAL_STUDY_SESSIONS, STUDY_MEMBERS_COUNT } from '@/constants/studyStats';
 
 interface DescriptionBoxProps {
   icon: string;
@@ -21,18 +25,19 @@ interface Props {
 const AboutCotam = ({ isVisible }: Props) => {
   const DescriptionList: DescriptionBoxProps[] = [
     {
-      icon: '/assets/image/Pixel16-Book.png',
+      icon: '/assets/icons/BookRed.svg',
       title: 'SCORE',
-      count: 48,
+      count: TOTAL_STUDY_SESSIONS,
       // 추후 스터디횟수 종합하는 API로 횟수 대체하기
-      description: '지금까지 48번의 스터디를 진행했어요!',
+      // -> #20241007.syjang, 우선 현재 날짜 기준으로 '주' 계산하도록 처리함
+      description: `지금까지 ${TOTAL_STUDY_SESSIONS}번의 스터디를 진행했어요!`,
     },
     {
-      icon: '/assets/image/Pixel16-Human.png',
+      icon: '/assets/icons/HumanRed.svg',
       title: 'PLAYER',
-      count: 31,
+      count: STUDY_MEMBERS_COUNT,
       // 추후 스터디횟수 종합하는 API로 횟수 대체하기
-      description: '지금까지 31명의 코탐과 함께하고 있어요!',
+      description: `지금까지 ${STUDY_MEMBERS_COUNT}명의 코탐과 함께하고 있어요!`,
     },
   ];
   return (
@@ -42,7 +47,7 @@ const AboutCotam = ({ isVisible }: Props) => {
       <p className="mb-5 text-cotam-red-60 galmuri11-headline-1">코탐은?</p>
       <p className="mb-20 whitespace-pre-wrap text-cotam-blue-10 pretandard-body-1">
         {
-          '2024년 활동 시작 이후로\n다양한 연차의 개발자,\n디자이너가 함께하고 있는\nIT 자기계발 스터디 모임입니다.'
+          '2023년 활동 시작 이후로\n다양한 연차의 개발자,\n디자이너가 함께하고 있는\nIT 자기계발 스터디 모임입니다.'
         }
       </p>
       <ul className="mb-20 flex flex-col gap-5 sm:flex-row">
@@ -75,11 +80,7 @@ interface DescriptionBoxProps {
 }
 
 const DescriptionBox = ({ icon, title, count, description, isVisible }: DescriptionBoxProps) => {
-  const [isCSR, setIsCSR] = useState(false);
-
-  useEffect(() => {
-    setIsCSR(true); // 클라이언트에서만 true로 변경
-  }, []);
+  const { isCSR } = useIsCSR();
 
   return (
     <li className="flex w-full flex-col gap-2 rounded-xl bg-cotam-blue-95 p-5">

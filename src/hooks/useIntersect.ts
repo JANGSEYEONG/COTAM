@@ -16,7 +16,8 @@ const useIntersect = (onIntersect: IntersectHandler, options?: IntersectionObser
 
   useEffect(() => {
     if (!ref.current) return;
-    if (typeof window === undefined) return;
+    // #20241007.syjang, 서버사이드에서 window는 문자열 'undefined'를 반환함. 문자열로 수정
+    if (typeof window === 'undefined' || !window.IntersectionObserver) return;
     const observer = new IntersectionObserver(callback, options);
     observer.observe(ref.current);
     return () => observer.disconnect();

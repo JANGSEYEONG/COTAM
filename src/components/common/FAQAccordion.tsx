@@ -21,9 +21,7 @@ const FAQAccordion = ({ className, questionText, answerText }: Props) => {
       onClick={toggleIsOpen}>
       <div className="items-top flex flex-row gap-2">
         <span className="min-w-fit text-cotam-red-60 galmuri11-body-2-bold">Q .</span>
-        <h3 className="w-[210px] text-cotam-gray-95 pretandard-subtitle-2 md:w-[90%]">
-          {questionText}
-        </h3>
+        <h3 className="pr-2 text-cotam-gray-95 pretandard-subtitle-2">{questionText}</h3>
       </div>
 
       <div
@@ -34,9 +32,9 @@ const FAQAccordion = ({ className, questionText, answerText }: Props) => {
         <div className="my-[12px] h-[1px] w-full bg-cotam-gray-10" />
         <div className="items-top flex flex-row gap-2">
           <span className="min-w-fit font-bold text-cotam-blue-50 galmuri11-body-2-bold">A .</span>
-          <div className="whitespace-pre-line pr-2 text-cotam-gray-80 pretandard-body-3">
+          <p className="whitespace-pre-line pr-2 text-cotam-gray-80 pretandard-body-3">
             {answerText}
-          </div>
+          </p>
         </div>
       </div>
 

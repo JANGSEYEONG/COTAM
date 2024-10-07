@@ -8,6 +8,7 @@ import Scroll from '../../../../public/assets/icons/ScrollRed.svg';
 import Target from '../../../../public/assets/icons/TargetRed.svg';
 import Bang from '../../../../public/assets/icons/Bang.svg';
 import { ZIndex } from '@/constants/ui';
+import { ROUTES } from '@/constants/routes';
 
 const CotamPeople = () => {
   const TopMoveBoxList: TopMoveBoxProps[] = [
@@ -61,7 +62,11 @@ const CotamPeople = () => {
           </p>
         </div>
       </div>
-      <LinkButton className="!text-cotam-blue-30" href="/people" label="코탐과 함께하는 사람들 ⇨" />
+      <LinkButton
+        className="!text-cotam-blue-30"
+        href={ROUTES.PEOPLE.PATH}
+        label="코탐과 함께하는 사람들 ⇨"
+      />
     </section>
   );
 };

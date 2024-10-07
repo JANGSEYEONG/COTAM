@@ -1,28 +1,26 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
+
+import useIsCSR from '@/hooks/useIsCSR';
 
 import BookRed from '../../../public/assets/icons/BookRed.svg';
 
+import CountUp from 'react-countup';
 import Tab from '@/components/common/Tab';
 import TimeTable from '@/components/common/TimeTable';
 import DescriptionCard from '@/components/common/DescriptionCard';
 
 import { activityList, studyProgressMethodList, tabList } from './constants';
-import CountUp from 'react-countup';
+import { TOTAL_STUDY_SESSIONS } from '@/constants/studyStats';
 
-const STUDY_COUNT = 43;
 const TabAbout = () => {
   const [selectedTab, setSelectedTab] = useState(0);
-  const [isCSR, setIsCSR] = useState(false);
+  const { isCSR } = useIsCSR();
 
   const handleTabChange = (index: number) => {
     setSelectedTab(index);
   };
-
-  useEffect(() => {
-    setIsCSR(true); // 클라이언트에서만 true로 변경
-  }, []);
 
   return (
     <main className="flex w-full flex-col gap-y-10">
@@ -35,12 +33,12 @@ const TabAbout = () => {
             className="flex w-full items-center justify-between rounded-xl bg-cotam-blue-90 p-5">
             <div className="flex flex-row items-center gap-2">
               <BookRed className="h-8 w-8" />
-              <span className="text-cotam-blue-40 galmuri11-body-l">SCORE</span>
+              <span className="text-cotam-blue-40 galmuri11-headline-3">SCORE</span>
             </div>
             <span className="text-cotam-red-50 galmuri11-headline-3">
               <CountUp
-                start={isCSR ? 0 : STUDY_COUNT}
-                end={STUDY_COUNT}
+                start={isCSR ? 0 : TOTAL_STUDY_SESSIONS}
+                end={TOTAL_STUDY_SESSIONS}
                 duration={2}
                 separator=","
               />

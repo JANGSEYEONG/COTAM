@@ -1,9 +1,9 @@
 import { Metadata } from 'next';
 
+import FAQList from '@/components/FAQList';
 import Button from '@/components/common/Button';
-import FAQAccordion from '@/components/common/FAQAccordion';
 import DescriptionCard from '@/components/common/DescriptionCard';
-import { FAQList } from './constant';
+import { KAKAO_OPEN_CHAT_URL, RECRUITMENT_FORM_URL } from '@/constants/externalLinks';
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -21,7 +21,7 @@ export default function Recruit() {
             <DescriptionCard
               variant="lightBlue"
               title="모집 기간"
-              contents="2024.10.07 - 2024.10.11"
+              contents="2024.10.08 - 2024.10.11"
               className="flex-1"
             />
             <DescriptionCard
@@ -31,7 +31,7 @@ export default function Recruit() {
               className="flex-1"
             />
           </div>
-          <a href="https://forms.gle/JhM9t7XzNAS5Agqo6" target="_blank" rel="noopener noreferrer">
+          <a href={RECRUITMENT_FORM_URL} target="_blank" rel="noopener noreferrer">
             <Button className="w-full">코탐 지원하기 ⇗</Button>
           </a>
         </div>
@@ -45,21 +45,11 @@ export default function Recruit() {
       </section>
       <section aria-label="자주 묻는 질문" className="flex flex-col gap-y-6">
         <h2 className="galmuri11-headline-3">자주 묻는 질문</h2>
-        <ul className="flex flex-col gap-y-3">
-          {FAQList.map(({ question, answer }) => (
-            <li key={question}>
-              <FAQAccordion questionText={question} answerText={answer} />
-            </li>
-          ))}
-        </ul>
+        <FAQList />
       </section>
       <section aria-label="문의하기" className="gap-3 flex-col-center">
         <p className="galmuri11-body-3">궁금한게 더 있으신가요?</p>
-        <a
-          className="w-full"
-          href="https://open.kakao.com/o/srJ7wcje"
-          target="_blank"
-          rel="noopener noreferrer">
+        <a className="w-full" href={KAKAO_OPEN_CHAT_URL} target="_blank" rel="noopener noreferrer">
           <Button variant="blue" className="w-full">
             카카오톡으로 문의하기
           </Button>
