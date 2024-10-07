@@ -40,6 +40,20 @@ const AboutCotam = ({ isVisible }: Props) => {
       description: `지금까지 ${STUDY_MEMBERS_COUNT}명의 코탐과 함께하고 있어요!`,
     },
   ];
+  const ImageList = [
+    {
+      title: '스터디',
+      description:
+        '매주 토요일 오후 2시~6시에 모여서 열심히 공부해요! 스터디 끝나고는 함께 저녁도 먹어요.',
+      imageSrc: '/assets/image/study.webp',
+    },
+    {
+      title: '네트워킹',
+      description:
+        '보드게임도 하고, 방탈출도 가고, 맛집 탐방도 해요. 다양한 활동으로 친목도 다지고 재미있게 지내요!',
+      imageSrc: '/assets/image/networking.webp',
+    },
+  ];
   return (
     <section
       className={`relative h-full w-full bg-cotam-blue-100 pb-[60px] pt-20 ${ZIndex.home.secondLayer} px-10`}>
@@ -60,8 +74,9 @@ const AboutCotam = ({ isVisible }: Props) => {
           {'스터디 뿐만 아니라\n다양한 활동도 함께해요'}
         </p>
         <div className="mb-9 flex flex-col gap-5 sm:flex-row">
-          <ImageBox />
-          <ImageBox />
+          {ImageList.map((image) => (
+            <ImageBox key={image.title} {...image} />
+          ))}
         </div>
       </div>
       <LinkButton href={ROUTES.ABOUT.PATH} label="코탐 더 알아보기 ⇨" />

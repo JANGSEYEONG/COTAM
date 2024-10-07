@@ -10,15 +10,16 @@ export const playerList = [
     name: 'Lian',
     position: 'manager',
     job: 'Front-End',
-    description: '모안녕하세요! 프론트엔드 개발하고 있습니다!',
+    description: '안녕하세요! 프론트엔드 개발하고 있습니다!',
     imageUrl: null,
   },
   {
     name: 'Jane',
     position: 'manager',
     job: 'Front-End',
-    description: '제인입니다',
-    imageUrl: null,
+    description:
+      '안녕하세요 :) 프론트엔드 개발자 제인입니다!\n스터디 이외에도 게임이나 다양한 활동 함께해요~!',
+    imageUrl: '/assets/image/people/jane.webp',
   },
   {
     name: '쿼카',
@@ -59,16 +60,23 @@ export const playerList = [
   {
     name: '로이스',
     position: 'user',
-    job: 'Front-End',
+    job: 'Back-End',
     description: '3년차 백엔드 개발자입니다!',
     imageUrl: null,
   },
   {
     name: '앨런',
     position: 'user',
-    job: 'Front-End',
+    job: 'Back-End',
     description: '3년차 백엔드입니다. 같이 공부하고 재밌게 해요~!',
     imageUrl: '/assets/image/people/allen.webp',
+  },
+  {
+    name: '레이첼',
+    position: 'user',
+    job: 'Front-End',
+    description: '-',
+    imageUrl: null,
   },
 ] as const;
 
