@@ -12,7 +12,7 @@ const Header = () => {
 
   return (
     <header className="sticky top-0 z-40 flex h-14 w-full items-center justify-between px-10 backdrop-blur-[50px] lg:h-[60px] lg:justify-start lg:gap-[60px] lg:px-[calc((100%-1024px)/2+40px)]">
-      <Link href={ROUTES.HOME.PATH}>
+      <Link href={ROUTES.HOME.PATH} aria-label="홈페이지로 이동">
         <Cotam className="h-[18px] w-20 cursor-pointer text-cotam-red-60" />
       </Link>
 
