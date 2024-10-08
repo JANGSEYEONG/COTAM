@@ -52,7 +52,7 @@ const CotamPeople = ({ isVisibleCotamPeople }: Props) => {
     <section
       className={`sticky top-0 flex flex-col gap-9 bg-cotam-blue-100 px-10 py-[60px] ${ZIndex.home.thirdLayer}`}>
       <p className="break-keep text-white galmuri11-headline-1">이런 사람들과 함께하고 있어요.</p>
-      <ul className="flex h-full min-h-[268px] flex-col flex-wrap gap-3 sm:flex-row">
+      <ul className="flex h-[268px] flex-col flex-wrap gap-3 sm:h-full sm:flex-row">
         {isVisibleCotamPeople &&
           TopMoveBoxList.map((topMoveBox) => <TopMoveBox key={topMoveBox.label} {...topMoveBox} />)}
       </ul>
