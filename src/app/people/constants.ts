@@ -11,7 +11,7 @@ export const playerList = [
     name: 'Lian',
     position: 'manager',
     job: 'Front-End',
-    description: '안녕하세요! 프론트엔드 개발하고 있습니다!',
+    description: '안녕하세요. 프론트엔드 개발자 리안입니다!\n같이 재밌게 활동해요!',
     imageUrl: null,
   },
   {

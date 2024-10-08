@@ -61,7 +61,7 @@ const AboutCotam = ({ isVisible }: Props) => {
       <p className="mb-5 text-cotam-red-60 galmuri11-headline-1">코탐은?</p>
       <p className="mb-20 whitespace-pre-wrap text-cotam-blue-10 pretandard-body-1">
         {
-          '2023년 활동 시작 이후로\n다양한 연차의 개발자,\n디자이너가 함께하고 있는\nIT 자기계발 스터디 모임입니다.'
+          '2023년 활동 시작 이후로\n다양한 연차의 개발자,\n디자이너가 함께하고 있는\nIT 자기계발 스터디 모임이에요.'
         }
       </p>
       <ul className="mb-20 flex flex-col gap-5 sm:flex-row">
