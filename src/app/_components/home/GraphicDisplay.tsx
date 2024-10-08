@@ -7,20 +7,10 @@ import { useEffect, useState } from 'react';
 const GraphicDisplay = () => {
   const [scrollY, setScrollY] = useState(0);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isScrollUp, setIsScrollUp] = useState(false);
 
   // 스크롤 이벤트 핸들러
   const handleScroll = () => {
-    let prevScroll = 0;
-    setScrollY((prev) => {
-      prevScroll = prev;
-      return window.scrollY - window.innerHeight || window.pageYOffset - window.innerHeight;
-    });
-    if (prevScroll >= scrollY) {
-      setIsScrollUp(true);
-    } else {
-      setIsScrollUp(false);
-    }
+    setScrollY(window.scrollY - window.innerHeight || window.pageYOffset - window.innerHeight);
   };
 
   // 컴포넌트가 마운트될 때 스크롤 이벤트 리스너 등록
@@ -50,7 +40,7 @@ const GraphicDisplay = () => {
         setCurrentIndex((prev) => prev - scrollRank);
       }
     }
-  }, [scrollY]);
+  }, [currentIndex, scrollY]);
 
   return (
     <div className="relative galmuri11-headline-3">
@@ -68,9 +58,20 @@ const GraphicDisplay = () => {
           <p
             className={cn(
               'text-cotam-blue-60 transition-all duration-300',
-              currentIndex > 0 && (currentIndex === 1 ? 'opacity-100' : 'hidden opacity-0'),
+              currentIndex >= 1 ? 'hidden opacity-0' : 'opacity-100',
             )}>
             ding
+          </p>
+          <p
+            className={cn(
+              'transition-all duration-300',
+              currentIndex > 0 && currentIndex === 1
+                ? 'text-cotam-blue-60 opacity-100'
+                : currentIndex < 2
+                  ? 'text-cotam-red-30 opacity-100'
+                  : 'hidden',
+            )}>
+            operate
           </p>
           <p
             className={cn(
@@ -81,7 +82,7 @@ const GraphicDisplay = () => {
                   ? 'text-cotam-red-30 opacity-100'
                   : 'hidden',
             )}>
-            operate
+            urage
           </p>
           <p
             className={cn(
@@ -92,7 +93,7 @@ const GraphicDisplay = () => {
                   ? 'text-cotam-red-30 opacity-100'
                   : 'hidden',
             )}>
-            urage
+            work
           </p>
           <p
             className={cn(
@@ -103,7 +104,7 @@ const GraphicDisplay = () => {
                   ? 'text-cotam-red-30 opacity-100'
                   : 'hidden',
             )}>
-            work
+            zy
           </p>
           <p
             className={cn(
@@ -111,17 +112,6 @@ const GraphicDisplay = () => {
               currentIndex > 4 && currentIndex === 5
                 ? 'text-cotam-blue-60 opacity-100'
                 : currentIndex < 6
-                  ? 'text-cotam-red-30 opacity-100'
-                  : 'hidden',
-            )}>
-            zy
-          </p>
-          <p
-            className={cn(
-              'transition-all duration-300',
-              currentIndex > 5 && currentIndex === 6
-                ? 'text-cotam-blue-60 opacity-100'
-                : currentIndex < 7
                   ? 'text-cotam-red-30 opacity-100'
                   : 'text-cotam-blue-60 opacity-100',
             )}>

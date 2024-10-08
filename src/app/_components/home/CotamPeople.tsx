@@ -10,7 +10,11 @@ import Bang from '../../../../public/assets/icons/Bang.svg';
 import { ZIndex } from '@/constants/ui';
 import { ROUTES } from '@/constants/routes';
 
-const CotamPeople = () => {
+interface Props {
+  isVisibleCotamPeople: boolean;
+}
+
+const CotamPeople = ({ isVisibleCotamPeople }: Props) => {
   const TopMoveBoxList: TopMoveBoxProps[] = [
     {
       icon: <Desktop className={'size-4'} />,
@@ -22,25 +26,25 @@ const CotamPeople = () => {
       icon: <Hand className={'size-4'} />,
       label: 'IT 업계분들과 교류하고 싶어요',
       backgroundColor: 'bg-cotam-blue-80',
-      delay: 500,
+      delay: 450,
     },
     {
       icon: <ArrowUp className={'size-4'} />,
       label: '성장하고 싶어요',
       backgroundColor: 'bg-cotam-blue-70',
-      delay: 700,
+      delay: 600,
     },
     {
       icon: <Scroll className={'size-4'} />,
       label: '생산적인 주말을 보내고 싶어요',
       backgroundColor: 'bg-cotam-blue-50',
-      delay: 900,
+      delay: 750,
     },
     {
       icon: <Target className={'size-4'} />,
       label: '목표를 달성하고 싶어요',
       backgroundColor: 'bg-cotam-blue-40',
-      delay: 1100,
+      delay: 900,
     },
   ];
 
@@ -48,10 +52,9 @@ const CotamPeople = () => {
     <section
       className={`sticky top-0 flex flex-col gap-9 bg-cotam-blue-100 px-10 py-[60px] ${ZIndex.home.thirdLayer}`}>
       <p className="break-keep text-white galmuri11-headline-1">이런 사람들과 함께하고 있어요.</p>
-      <ul className="flex flex-col flex-wrap gap-3 sm:flex-row">
-        {TopMoveBoxList.map((topMoveBox) => (
-          <TopMoveBox key={topMoveBox.label} {...topMoveBox} />
-        ))}
+      <ul className="flex h-full min-h-[268px] flex-col flex-wrap gap-3 sm:flex-row">
+        {isVisibleCotamPeople &&
+          TopMoveBoxList.map((topMoveBox) => <TopMoveBox key={topMoveBox.label} {...topMoveBox} />)}
       </ul>
       <div className="flex gap-3 rounded-xl bg-cotam-blue-95 p-5">
         <Bang className="mt-[5px] h-4 w-[18px] leading-7" />

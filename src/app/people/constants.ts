@@ -1,10 +1,11 @@
 export const playerList = [
   {
-    name: 'MOSEUNG',
+    name: '모승',
     position: 'leader',
     job: 'Front-End',
-    description: '모승입니다',
-    imageUrl: null,
+    description:
+      '안녕하세요! 개발자가 천직이라고 생각하는 프론트엔드 개발자 모승입니다:)\n개발도 좋아하고 소통도 좋아해서 같이 친하게 지내요! 저는 프론트와 인프라에 관심이 많아요.\n롤 다이아에요.',
+    imageUrl: '/assets/image/people/moseung.jpeg',
   },
   {
     name: 'Lian',

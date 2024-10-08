@@ -8,15 +8,15 @@ interface Props {
 }
 const ImageBox = ({ title, description, imageSrc }: Props) => {
   return (
-    <div className="flex-grow overflow-hidden rounded-xl">
-      <figure className="relative h-[210px] w-full">
+    <div className="basis-full overflow-hidden rounded-xl sm:basis-1/2">
+      <figure className="relative aspect-[4/3] w-full">
         <Image
           priority
           src={imageSrc}
           alt="소개이미지"
           fill
           className="object-cover"
-          sizes="100%"
+          // sizes="100%"
         />
       </figure>
       {/* <Image width={280} height={210} alt="소개이미지" src={'/assets/image/networking.webp'} /> */}
