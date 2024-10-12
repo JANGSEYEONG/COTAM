@@ -15,7 +15,7 @@ export default function Recruit() {
   return (
     <main className="box-border flex min-h-screen w-full flex-col gap-y-[100px] p-10 lg:w-[1024px]">
       <section aria-label="모집 일정" className="flex flex-col gap-y-6">
-        <h2 className="galmuri11-headline-3">모집 일정</h2>
+        <h2 className="text-white galmuri11-headline-3">모집 일정</h2>
         <div className="flex flex-col gap-y-6">
           <div className="flex flex-col gap-3 md:flex-row">
             <DescriptionCard
@@ -37,7 +37,7 @@ export default function Recruit() {
         </div>
       </section>
       <section aria-label="지원 자격" className="flex flex-col gap-y-6">
-        <h2 className="galmuri11-headline-3">지원 자격</h2>
+        <h2 className="text-white galmuri11-headline-3">지원 자격</h2>
         <div className="flex flex-col gap-3 md:flex-row">
           <DescriptionCard title="직군" contents="기획자, 디자이너, 개발자" className="flex-1" />
           <DescriptionCard title="연차" contents="경력 3개월 이상" className="flex-1" />
