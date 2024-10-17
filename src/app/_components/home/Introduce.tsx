@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import ArrowDown from '../../../../public/assets/icons/ArrowUpBlue.svg';
-import WithCotamButton from '../WithCotamButton';
+import WithCotamButton from './WithCotamButton';
 
 const Introduce = () => {
   return (
