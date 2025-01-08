@@ -9,7 +9,12 @@ import BorderTop from '@/components/common/BorderTop';
 
 import { ZIndex } from '@/constants/ui';
 import { ROUTES } from '@/constants/routes';
-import { TOTAL_STUDY_SESSIONS, STUDY_MEMBERS_COUNT } from '@/constants/studyStats';
+import {
+  TOTAL_STUDY_SESSIONS,
+  STUDY_MEMBERS_COUNT,
+  OFFLINE_STUDY_SESSIONS_COMPLETED,
+  ONLINE_STUDY_SESSIONS_COMPLETED,
+} from '@/constants/studyStats';
 
 interface DescriptionBoxProps {
   icon: string;
@@ -30,7 +35,8 @@ const AboutCotam = ({ isVisible }: Props) => {
       count: TOTAL_STUDY_SESSIONS,
       // 추후 스터디횟수 종합하는 API로 횟수 대체하기
       // -> #20241007.syjang, 우선 현재 날짜 기준으로 '주' 계산하도록 처리함
-      description: `지금까지 ${TOTAL_STUDY_SESSIONS}번의 스터디를 진행했어요!`,
+      // -> #20251231.syjang, 온라인/오프라인 횟수 표시 나눔
+      description: `지금까지 온라인 ${ONLINE_STUDY_SESSIONS_COMPLETED}회, 오프라인 ${OFFLINE_STUDY_SESSIONS_COMPLETED}회로 총 ${TOTAL_STUDY_SESSIONS}번의 스터디를 진행했어요!`,
     },
     {
       icon: '/assets/icons/HumanRed.svg',
@@ -110,5 +116,3 @@ const DescriptionBox = ({ icon, title, count, description, isVisible }: Descript
     </li>
   );
 };
-
-export { DescriptionBox };
