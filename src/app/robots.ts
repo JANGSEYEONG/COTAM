@@ -1,3 +1,4 @@
+import { SITE_URL } from '@/constants/metadata';
 import { MetadataRoute } from 'next';
 
 export default function robots(): MetadataRoute.Robots {
@@ -6,6 +7,7 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    host: 'https://cotam.vercel.app/',
+    host: SITE_URL,
+    sitemap: `${SITE_URL}/sitemap.xml`,
   };
 }
