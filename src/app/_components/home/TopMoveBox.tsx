@@ -1,7 +1,8 @@
 'use client';
 
-import { cn } from '@/lib/utils';
 import { ReactNode, useEffect, useState } from 'react';
+
+import { cn } from '@/lib/utils';
 
 export interface TopMoveBoxProps {
   icon: ReactNode;

@@ -1,8 +1,10 @@
 import Link from 'next/link';
+
 import Button from '@/components/common/Button';
+
+import { recruitConfig } from '@/constants/recruitConfig';
 import { ROUTES } from '@/constants/routes';
 import { ZIndex } from '@/constants/ui';
-import { recruitConfig } from '@/constants/recruitConfig';
 
 const WithCotamButton = () => {
   return (

@@ -1,5 +1,5 @@
-import Image from 'next/image';
 import { Metadata } from 'next';
+import Image from 'next/image';
 
 import PeopleCount from './_components/PeopleCount';
 import { playerList, positionMap } from './constants';

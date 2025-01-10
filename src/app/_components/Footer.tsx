@@ -1,6 +1,8 @@
 import Link from 'next/link';
-import Cotam from '../../../public/assets/logo/Cotam.svg';
+
 import { ROUTES } from '@/constants/routes';
+
+import Cotam from '../../../public/assets/logo/Cotam.svg';
 
 const Footer = () => {
   return (

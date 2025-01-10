@@ -1,14 +1,16 @@
 import React from 'react';
-import LinkButton from './LinkButton';
-import TopMoveBox, { TopMoveBoxProps } from './TopMoveBox';
+
+import { ROUTES } from '@/constants/routes';
+import { ZIndex } from '@/constants/ui';
+
+import ArrowUp from '../../../../public/assets/icons/ArrowUpRed.svg';
+import Bang from '../../../../public/assets/icons/Bang.svg';
 import Desktop from '../../../../public/assets/icons/DesktopRed.svg';
 import Hand from '../../../../public/assets/icons/HandRed.svg';
-import ArrowUp from '../../../../public/assets/icons/ArrowUpRed.svg';
 import Scroll from '../../../../public/assets/icons/ScrollRed.svg';
 import Target from '../../../../public/assets/icons/TargetRed.svg';
-import Bang from '../../../../public/assets/icons/Bang.svg';
-import { ZIndex } from '@/constants/ui';
-import { ROUTES } from '@/constants/routes';
+import LinkButton from './LinkButton';
+import TopMoveBox, { TopMoveBoxProps } from './TopMoveBox';
 
 interface Props {
   isVisibleCotamPeople: boolean;

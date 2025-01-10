@@ -1,6 +1,8 @@
-import { cn } from '@/lib/utils';
-import { cva, VariantProps } from 'class-variance-authority';
 import { forwardRef } from 'react';
+
+import { VariantProps, cva } from 'class-variance-authority';
+
+import { cn } from '@/lib/utils';
 
 const descriptionCardVariants = cva(
   'flex flex-col gap-1 rounded-xl p-4', // 공통 클래스

@@ -1,8 +1,11 @@
 'use client';
 
 import BorderTop from '@/components/common/BorderTop';
-import { ZIndex } from '@/constants/ui';
+
 import useIsVisible from '@/hooks/useIsVisible';
+
+import { ZIndex } from '@/constants/ui';
+
 import AboutCotam from './_components/home/AboutCotam';
 import Closing from './_components/home/Closing';
 import Cotam from './_components/home/Cotam';

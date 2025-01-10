@@ -1,8 +1,8 @@
 import localFont from 'next/font/local';
-import './globals.css';
 
-import Header from './_components/Header';
 import Footer from './_components/Footer';
+import Header from './_components/Header';
+import './globals.css';
 import { metadata } from './metadata';
 
 const galmuri = localFont({

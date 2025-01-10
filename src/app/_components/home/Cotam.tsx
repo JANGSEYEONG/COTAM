@@ -1,6 +1,7 @@
 'use client';
 
 import { ZIndex } from '@/constants/ui';
+
 import GraphicDisplay from './GraphicDisplay';
 
 const Cotam = () => {

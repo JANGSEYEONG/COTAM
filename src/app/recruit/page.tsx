@@ -1,9 +1,9 @@
 import { Metadata } from 'next';
 
-import RecruitmentPeriod from './_components/RecruitmentPeriod';
 import ApplicationRequirements from './_components/ApplicationRequirements';
-import FAQSection from './_components/FAQSection';
 import ContactSection from './_components/ContactSection';
+import FAQSection from './_components/FAQSection';
+import RecruitmentPeriod from './_components/RecruitmentPeriod';
 
 export async function generateMetadata(): Promise<Metadata> {
   return {

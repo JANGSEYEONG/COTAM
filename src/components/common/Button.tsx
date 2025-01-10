@@ -1,6 +1,8 @@
-import { cn } from '@/lib/utils';
-import { cva, VariantProps } from 'class-variance-authority';
 import { forwardRef } from 'react';
+
+import { VariantProps, cva } from 'class-variance-authority';
+
+import { cn } from '@/lib/utils';
 
 const buttonVariants = cva(
   'rounded-xl px-6 py-[18px] transition-colors duration-200 galmuri11-body-m flex-center',

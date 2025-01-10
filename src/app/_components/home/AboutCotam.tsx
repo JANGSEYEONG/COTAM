@@ -1,20 +1,22 @@
 import Image from 'next/image';
 
-import useIsCSR from '@/hooks/useIsCSR';
-
 import CountUp from 'react-countup';
-import ImageBox from './ImageBox';
-import LinkButton from './LinkButton';
+
 import BorderTop from '@/components/common/BorderTop';
 
-import { ZIndex } from '@/constants/ui';
+import useIsCSR from '@/hooks/useIsCSR';
+
 import { ROUTES } from '@/constants/routes';
 import {
-  TOTAL_STUDY_SESSIONS,
-  STUDY_MEMBERS_COUNT,
   OFFLINE_STUDY_SESSIONS_COMPLETED,
   ONLINE_STUDY_SESSIONS_COMPLETED,
+  STUDY_MEMBERS_COUNT,
+  TOTAL_STUDY_SESSIONS,
 } from '@/constants/studyStats';
+import { ZIndex } from '@/constants/ui';
+
+import ImageBox from './ImageBox';
+import LinkButton from './LinkButton';
 
 interface DescriptionBoxProps {
   icon: string;

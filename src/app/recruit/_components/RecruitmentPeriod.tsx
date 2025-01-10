@@ -1,8 +1,8 @@
 import Button from '@/components/common/Button';
 import DescriptionCard from '@/components/common/DescriptionCard';
 
-import { recruitConfig } from '@/constants/recruitConfig';
 import { RECRUITMENT_FORM_URL } from '@/constants/externalLinks';
+import { recruitConfig } from '@/constants/recruitConfig';
 
 const RecruitmentPeriod = () => {
   return (

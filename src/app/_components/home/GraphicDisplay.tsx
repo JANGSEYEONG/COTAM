@@ -1,8 +1,10 @@
 'use client';
 
-import { cn } from '@/lib/utils';
-import Image from 'next/image';
 import { useEffect, useState } from 'react';
+
+import Image from 'next/image';
+
+import { cn } from '@/lib/utils';
 
 const GraphicDisplay = () => {
   const [scrollY, setScrollY] = useState(0);

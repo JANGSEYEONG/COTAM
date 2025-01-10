@@ -1,8 +1,3 @@
-export const tabList = [
-  { index: 0, value: '스터디' },
-  { index: 1, value: '네트워킹' },
-];
-
 export const studyProgressMethodList = [
   {
     time: '14:00 - 14:30',

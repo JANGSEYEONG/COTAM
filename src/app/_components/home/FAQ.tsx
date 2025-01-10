@@ -1,9 +1,12 @@
 import React from 'react';
-import LinkButton from './LinkButton';
-import Button from '@/components/common/Button';
+
 import FAQList from '@/components/FAQList';
-import { ROUTES } from '@/constants/routes';
+import Button from '@/components/common/Button';
+
 import { KAKAO_OPEN_CHAT_URL } from '@/constants/externalLinks';
+import { ROUTES } from '@/constants/routes';
+
+import LinkButton from './LinkButton';
 
 const FAQ = () => {
   return (

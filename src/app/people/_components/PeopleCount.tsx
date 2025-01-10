@@ -1,9 +1,12 @@
 'use client';
+
+import CountUp from 'react-countup';
+
 import useIsCSR from '@/hooks/useIsCSR';
 
-import HumanRed from '../../../../public/assets/icons/HumanRed.svg';
-import CountUp from 'react-countup';
 import { STUDY_MEMBERS_COUNT } from '@/constants/studyStats';
+
+import HumanRed from '../../../../public/assets/icons/HumanRed.svg';
 
 const PeopleCount = () => {
   const { isCSR } = useIsCSR();

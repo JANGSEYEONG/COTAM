@@ -1,4 +1,5 @@
 import { useState } from 'react';
+
 import useIntersect from './useIntersect';
 
 const useIsVisible = (options?: IntersectionObserverInit) => {
