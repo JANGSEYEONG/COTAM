@@ -32,21 +32,21 @@ export const playerList = [
   {
     name: '데이빗',
     position: 'user',
-    job: 'Developer',
+    job: 'App',
     description: '-',
     imageUrl: null,
   },
   {
     name: '동원',
     position: 'user',
-    job: 'Developer',
+    job: 'Front-End',
     description: '-',
     imageUrl: null,
   },
   {
     name: '든든',
     position: 'user',
-    job: 'Developer',
+    job: 'Back-End',
     description: '-',
     imageUrl: null,
   },
@@ -67,19 +67,12 @@ export const playerList = [
   {
     name: '로이스',
     position: 'user',
-    job: 'Developer',
+    job: 'Back-End',
     description: '3년차 백엔드 개발자입니다!',
     imageUrl: null,
   },
   {
     name: '루키',
-    position: 'user',
-    job: 'Front-End',
-    description: '-',
-    imageUrl: null,
-  },
-  {
-    name: '리안',
     position: 'user',
     job: 'Front-End',
     description: '-',
@@ -95,7 +88,7 @@ export const playerList = [
   {
     name: '성재',
     position: 'user',
-    job: 'Developer',
+    job: 'Back-End',
     description: '-',
     imageUrl: null,
   },
@@ -116,7 +109,7 @@ export const playerList = [
   {
     name: '아사',
     position: 'user',
-    job: '-',
+    job: 'Front-End',
     description: '-',
     imageUrl: null,
   },
@@ -130,7 +123,7 @@ export const playerList = [
   {
     name: '엘리사',
     position: 'user',
-    job: 'Developer',
+    job: 'Front-End',
     description: '-',
     imageUrl: null,
   },
@@ -144,7 +137,7 @@ export const playerList = [
   {
     name: '영준',
     position: 'user',
-    job: 'Developer',
+    job: 'Front-End',
     description: '-',
     imageUrl: null,
   },
@@ -172,7 +165,7 @@ export const playerList = [
   {
     name: '준',
     position: 'user',
-    job: 'Developer',
+    job: 'Front-End',
     description: '-',
     imageUrl: null,
   },
