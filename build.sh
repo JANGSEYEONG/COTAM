@@ -1,5 +1,5 @@
 #!/bin/sh
 cd ../
 mkdir output
-cp -R ./COOMTAM_FE/* ./output
-cp -R ./output ./COOMTAM_FE/
+cp -R ./COTAM_FE/* ./output
+cp -R ./output ./COTAM_FE/
