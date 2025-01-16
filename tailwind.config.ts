@@ -1,5 +1,6 @@
 import type { Config } from 'tailwindcss';
 import plugin from 'tailwindcss/plugin';
+
 import typographyStyles from './typography';
 
 const config: Config = {
@@ -81,10 +82,6 @@ const config: Config = {
           backgroundImage: "url('/assets/background/PixelGradient.png')",
           backgroundRepeat: 'repeat-x',
           backgroundPosition: 'bottom',
-        },
-        '.backdrop-blur-20px': {
-          '-webkit-backdrop-filter': 'blur(20px)',
-          backdropFilter: 'blur(20px)',
         },
       };
       addUtilities(newUtilities);

@@ -1,6 +1,6 @@
 import { FAQ_ITEMS } from '@/constants/faqData';
 
-import FAQAccordion from './common/FAQAccordion';
+import FAQAccordion from './FAQAccordion';
 
 const FAQList = () => {
   return (

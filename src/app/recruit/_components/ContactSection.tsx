@@ -1,4 +1,4 @@
-import Button from '@/components/common/Button';
+import Button from '@/components/Button';
 
 import { KAKAO_OPEN_CHAT_URL } from '@/constants/externalLinks';
 

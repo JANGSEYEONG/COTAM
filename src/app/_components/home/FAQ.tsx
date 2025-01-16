@@ -1,7 +1,7 @@
 import React from 'react';
 
+import Button from '@/components/Button';
 import FAQList from '@/components/FAQList';
-import Button from '@/components/common/Button';
 
 import { KAKAO_OPEN_CHAT_URL } from '@/constants/externalLinks';
 import { ROUTES } from '@/constants/routes';

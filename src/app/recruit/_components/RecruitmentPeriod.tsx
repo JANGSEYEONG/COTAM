@@ -1,5 +1,5 @@
-import Button from '@/components/common/Button';
-import DescriptionCard from '@/components/common/DescriptionCard';
+import Button from '@/components/Button';
+import DescriptionCard from '@/components/DescriptionCard';
 
 import { RECRUITMENT_FORM_URL } from '@/constants/externalLinks';
 import { recruitConfig } from '@/constants/recruitConfig';

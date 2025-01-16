@@ -1,4 +1,4 @@
-import DescriptionCard from '@/components/common/DescriptionCard';
+import DescriptionCard from '@/components/DescriptionCard';
 
 const ApplicationRequirements = () => {
   return (

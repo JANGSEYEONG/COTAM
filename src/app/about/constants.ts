@@ -1,4 +1,4 @@
-export const studyProgressMethodList = [
+export const timeTableSchedule = [
   {
     time: '14:00 - 14:30',
     contents: '소개, Task 작성, Group Discussion',

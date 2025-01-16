@@ -2,15 +2,15 @@
 
 import CountUp from 'react-countup';
 
-import DescriptionCard from '@/components/common/DescriptionCard';
-import TimeTable from '@/components/common/TimeTable';
+import DescriptionCard from '@/components/DescriptionCard';
+import TimeTable from '@/components/TimeTable';
 
 import useIsCSR from '@/hooks/useIsCSR';
 
 import { TOTAL_STUDY_SESSIONS } from '@/constants/studyStats';
 
 import BookRed from '../../../../public/assets/icons/BookRed.svg';
-import { studyProgressMethodList } from '../constants';
+import { timeTableSchedule } from '../constants';
 
 const StudyTabItem = () => {
   const { isCSR } = useIsCSR();
@@ -52,7 +52,7 @@ const StudyTabItem = () => {
       <section aria-label="스터디 진행 방식" className="box-border flex w-full flex-col gap-y-6">
         <h2 className="text-white galmuri11-headline-3">정규 스터디 진행 방식</h2>
         <ul className="flex flex-col gap-y-8">
-          {studyProgressMethodList.map((item, index) => (
+          {timeTableSchedule.map((item, index) => (
             <li key={index} className="flex flex-col gap-y-3">
               <TimeTable
                 time={item.time}

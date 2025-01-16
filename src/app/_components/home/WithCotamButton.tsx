@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import Button from '@/components/common/Button';
+import Button from '@/components/Button';
 
 import { recruitConfig } from '@/constants/recruitConfig';
 import { ROUTES } from '@/constants/routes';

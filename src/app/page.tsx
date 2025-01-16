@@ -1,6 +1,6 @@
 'use client';
 
-import BorderTop from '@/components/common/BorderTop';
+import BorderTop from '@/components/BorderTop';
 
 import useIsVisible from '@/hooks/useIsVisible';
 

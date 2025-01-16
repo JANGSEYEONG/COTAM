@@ -1,7 +1,7 @@
 import localFont from 'next/font/local';
 
-import Footer from './_components/Footer';
-import Header from './_components/Header';
+import Footer from './_components/layout/Footer';
+import Header from './_components/layout/Header';
 import './globals.css';
 import { metadata } from './metadata';
 

@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 
-import Tabs from '@/components/common/Tabs';
+import Tabs from '@/components/Tabs';
 
 import NetworkingTabItem from './_components/NetworkingTabItem';
 import StudyTabItem from './_components/StudyTabItem';

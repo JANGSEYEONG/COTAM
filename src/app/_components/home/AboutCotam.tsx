@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 import CountUp from 'react-countup';
 
-import BorderTop from '@/components/common/BorderTop';
+import BorderTop from '@/components/BorderTop';
 
 import useIsCSR from '@/hooks/useIsCSR';
 

@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 import { ROUTES } from '@/constants/routes';
 
-import Cotam from '../../../public/assets/logo/Cotam.svg';
+import Cotam from '../../../../public/assets/logo/Cotam.svg';
 
 const Footer = () => {
   return (
