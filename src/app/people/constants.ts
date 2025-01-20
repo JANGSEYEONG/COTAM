@@ -186,6 +186,13 @@ export const playerList: Member[] = [
     imageUrl: null,
   },
   {
+    name: '콰니',
+    position: POSITION.USER,
+    job: JOB.FRONTEND,
+    description: '',
+    imageUrl: null,
+  },
+  {
     name: '클로이',
     position: POSITION.USER,
     job: JOB.FRONTEND,
