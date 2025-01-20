@@ -31,7 +31,7 @@ const DescriptionCard = forwardRef<HTMLDivElement, Props>(
     return (
       <div ref={ref} className={cn(descriptionCardVariants({ variant }), className)} {...props}>
         <label className="galmuri11-body-3">{title}</label>
-        <p className="text-white galmuri11-body-1">{contents}</p>
+        <p className="whitespace-break-spaces text-white galmuri11-body-1">{contents}</p>
       </div>
     );
   },
