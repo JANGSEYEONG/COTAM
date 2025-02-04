@@ -4,11 +4,20 @@ export const POSITION = {
   USER: 'user',
 } as const;
 
+// 스터디원 리스트 정렬 순서
+export const POSITION_PRIORITY = {
+  [POSITION.LEADER]: 1,
+  [POSITION.MANAGER]: 2,
+  [POSITION.USER]: 3,
+} as const;
+
 export const JOB = {
   FRONTEND: 'Front-End',
   BACKEND: 'Back-End',
+  FULLSTACk: 'Full-Stack',
   APP: 'App',
   DESIGNER: 'Designer',
+  AI: 'AI',
 } as const;
 
 export const positionMap = {

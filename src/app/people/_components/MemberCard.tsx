@@ -31,7 +31,7 @@ const MemberCard = ({ name, job, position, description, imageUrl }: Member) => {
         </div>
 
         {/* 스터디장, 운영진만 태그 표시 */}
-        {position !== POSITION.USER && (
+        {(position === POSITION.LEADER || position === POSITION.MANAGER) && (
           <span className="box-border h-fit rounded bg-cotam-blue-40 px-1 text-white">
             {positionMap[position]}
           </span>
