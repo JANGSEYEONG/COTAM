@@ -30,7 +30,7 @@ COTAM은 프론트엔드 개발자들이 함께 모여 성장하는 모각코(�
       <b><a href="https://github.com/endmoseung">모승</a></b>
     </td>
     <td align="center">
-      <b><a href="https://github.com/Seongtaek-H">제인</a></b>
+      <b><a href="https://github.com/JANGSEYEONG">제인</a></b>
     </td>
     <td align="center">
       <b><a href="https://github.com/sukyeongh">리안</a></b>
