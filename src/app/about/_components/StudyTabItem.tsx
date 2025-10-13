@@ -38,10 +38,7 @@ const StudyTabItem = () => {
         <h2 className="text-white galmuri11-headline-3">정규 스터디</h2>
         <div className="flex flex-col gap-y-3 md:grid md:grid-cols-2 md:gap-x-3">
           <DescriptionCard title="시간" contents="매주 토요일 14시-18시" />
-          <DescriptionCard
-            title="장소"
-            contents={`1주차, 3주차: 강남역 근처\n2주차, 4주차: 건대입구 근처`}
-          />
+          <DescriptionCard title="장소" contents="강남역 근처" />
         </div>
         <div className="flex flex-row gap-x-2">
           <span className="text-cotam-blue-40 galmuri11-body-3">❗</span>
@@ -53,7 +50,7 @@ const StudyTabItem = () => {
       </section>
 
       <section aria-label="스터디 진행 방식" className="box-border flex w-full flex-col gap-y-6">
-        <h2 className="text-white galmuri11-headline-3">정규 스터디 진행 방식</h2>
+        <h2 className="text-white galmuri11-headline-3">정규 모각코 진행 방식</h2>
         <ul className="flex flex-col gap-y-8">
           {timeTableSchedule.map((item, index) => (
             <li key={index} className="flex flex-col gap-y-3">

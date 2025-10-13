@@ -21,7 +21,7 @@ const ImageBox = ({ title, description, imageSrc }: Props) => {
         />
       </figure>
       {/* <Image width={280} height={210} alt="소개이미지" src={'/assets/image/networking.webp'} /> */}
-      <div className="rounded-b-xl bg-cotam-red-10 p-5">
+      <div className="h-full rounded-b-xl bg-cotam-red-10 p-5">
         <p className="text-cotam-red-50 pretandard-subtitle-1">{title}</p>
         <p className="text-cotam-gray-60 pretandard-body-3">{description}</p>
       </div>
