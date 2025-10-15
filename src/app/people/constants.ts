@@ -17,19 +17,25 @@ export const playerList: Member[] = [
     imageUrl: null,
   },
   {
-    name: '제인',
+    name: 'Benzy',
     position: POSITION.MANAGER,
     job: JOB.FRONTEND,
-    description:
-      '안녕하세요 :) 프론트엔드 개발자 제인입니다!\n스터디 이외에도 게임이나 다양한 활동 함께해요~!',
-    imageUrl: '/assets/image/people/jane.webp',
+    description: '',
+    imageUrl: null,
+  },
+  {
+    name: '제이디',
+    position: POSITION.MANAGER,
+    job: JOB.FULLSTACk,
+    description: '',
+    imageUrl: null,
   },
   {
     name: '데이빗',
     position: POSITION.USER,
     job: JOB.APP,
     description:
-      '안녕하세요, 프로덕트 만드는 걸 좋아하는 데이빗입니다!\n2023년에 iOS 개발자로 커리어를 시작했어요.\n요즘은 블록체인을 공부하고 있고 AI를 활용한 문제 해결에 관심이 많습니다.\n코탐에 오셔서 같이 모각코도 하고 재밌는 얘기, 인사이트 많이 나눴으면 좋겠어요!',
+      '안녕하세요, 모바일 개발자 데이빗입니다!\n주로 Flutter를 사용해서 개발하고 있습니다.',
     imageUrl: null,
   },
   {
@@ -48,17 +54,26 @@ export const playerList: Member[] = [
     imageUrl: null,
   },
   {
-    name: '루키',
+    name: '마일스',
     position: POSITION.USER,
-    job: JOB.FRONTEND,
-    description: '이게 왜 되는지가 궁금한 개발자입니다.',
+    job: JOB.FULLSTACk,
+    description:
+      '안녕하세요! 백엔드 개발자 마일스입니다. 빠르게 제품을 만드는 것에 관심이 많아요. 스터디해서 함께 실력 늘려가면 좋겠어요!',
     imageUrl: null,
   },
   {
-    name: '서쿤',
+    name: '민초',
     position: POSITION.USER,
     job: JOB.FRONTEND,
-    description: '',
+    description:
+      '안녕하세요! 주니어 프론트엔드 개발자 민초입니다.\n함께 몰입해서 즐겁게 공부해요 :)',
+    imageUrl: null,
+  },
+  {
+    name: '삼천포',
+    position: POSITION.USER,
+    job: JOB.FRONTEND,
+    description: '1년차 프론트엔드 개발자 삼천포입니다!',
     imageUrl: null,
   },
   {
@@ -69,18 +84,26 @@ export const playerList: Member[] = [
     imageUrl: null,
   },
   {
-    name: '세이지',
+    name: '션',
     position: POSITION.USER,
-    job: JOB.DESIGNER,
+    job: JOB.FRONTEND,
+    description:
+      '안녕하세요, 프론트엔드 개발자 션입니다. 같이 모각코도 하고 인사이트도 나누고, 서로의 발전 동력이 되면 좋겠습니다.',
+    imageUrl: null,
+  },
+  {
+    name: '신수',
+    position: POSITION.USER,
+    job: JOB.FRONTEND,
     description: '',
     imageUrl: null,
   },
   {
-    name: 'Sue',
+    name: '써밋',
     position: POSITION.USER,
     job: JOB.FRONTEND,
     description:
-      '안녕하세요! FE개발하고있는 Sue입니다 :)\n코탐 활동으로 직군별 연차별 여러 분들과 소통하고 개발생활에 많은 자극받고있습니다. 자주뵈어요😄',
+      '안녕하세요 프론트엔드 개발자 써밋입니다!\n여러 인사이트를 공유하면서 함께 성장하는 것을 좋아해요 ㅇ_ㅇ!',
     imageUrl: null,
   },
   {
@@ -89,6 +112,13 @@ export const playerList: Member[] = [
     job: JOB.BACKEND,
     description: '3년차 백엔드입니다. 같이 공부하고 재밌게 해요~!',
     imageUrl: '/assets/image/people/allen.webp',
+  },
+  {
+    name: '에드',
+    position: POSITION.USER,
+    job: JOB.FRONTEND,
+    description: '뚝딱뚝딱 만들기를 좋아하는 개발자 에드입니다.',
+    imageUrl: null,
   },
   {
     name: '엘리사',
@@ -105,16 +135,31 @@ export const playerList: Member[] = [
     imageUrl: null,
   },
   {
-    name: '제레미',
+    name: '원',
     position: POSITION.USER,
     job: JOB.FRONTEND,
     description: '',
     imageUrl: null,
   },
   {
-    name: '지수',
+    name: '제인',
     position: POSITION.USER,
-    job: JOB.BACKEND,
+    job: JOB.FRONTEND,
+    description:
+      '안녕하세요 :) 프론트엔드 개발자 제인입니다!\n스터디 이외에도 게임이나 다양한 활동 함께해요~!',
+    imageUrl: '/assets/image/people/jane.webp',
+  },
+  {
+    name: '진코',
+    position: POSITION.USER,
+    job: JOB.FRONTEND,
+    description: '',
+    imageUrl: null,
+  },
+  {
+    name: '카일라',
+    position: POSITION.USER,
+    job: JOB.FRONTEND,
     description: '',
     imageUrl: null,
   },
@@ -126,49 +171,11 @@ export const playerList: Member[] = [
     imageUrl: null,
   },
   {
-    name: '클로이',
-    position: POSITION.USER,
-    job: JOB.FRONTEND,
-    description: '프론트엔드 개발자입니다. AI, 백엔드에도 관심이 많아요!',
-    imageUrl: null,
-  },
-  {
     name: '하르방',
     position: POSITION.USER,
     job: JOB.APP,
-    description:
-      'flutter 앱 주니어 개발자 하르방입니다🗿\n운동에 관심많고 메이플 스토리 좋아합니다.',
-    imageUrl: null,
-  },
-  {
-    name: '써밋',
-    position: POSITION.USER,
-    job: JOB.FRONTEND,
-    description:
-      '안녕하세요 프론트엔드 개발자 써밋입니다!\n여러 인사이트를 공유하면서 함께 성장하는 것을 좋아해요 ㅇ_ㅇ!',
-    imageUrl: null,
-  },
-  {
-    name: '민초',
-    position: POSITION.USER,
-    job: JOB.FRONTEND,
-    description:
-      '안녕하세요! 주니어 프론트엔드 개발자 민초입니다.\n함께 몰입해서 즐겁게 공부해요 :)',
-    imageUrl: null,
-  },
-  {
-    name: '삼천포',
-    position: POSITION.USER,
-    job: JOB.FRONTEND,
-    description: '안녕하세요:) 프론트엔드 개발자 삼천포라고 합니다! 잘 부탁 드려요~!',
-    imageUrl: null,
-  },
-  {
-    name: 'hyun',
-    position: POSITION.USER,
-    job: JOB.FRONTEND,
-    description: '프론트 말고도 이것저것 관심이 많은 3년차 프론트엔드 개발자 hyun입니다😃',
-    imageUrl: null,
+    description: '낭만 Flutter 개발자',
+    imageUrl: '/assets/image/people/hareubang.png',
   },
   {
     name: '하딩',
@@ -178,40 +185,60 @@ export const playerList: Member[] = [
     imageUrl: null,
   },
   {
-    name: '코코',
+    name: '후니',
     position: POSITION.USER,
     job: JOB.FRONTEND,
     description: '',
     imageUrl: null,
   },
   {
-    name: '에드',
+    name: 'Been',
     position: POSITION.USER,
     job: JOB.FRONTEND,
-    description: '뚝딱뚝딱 만들기를 좋아하는 개발자 에드입니다.',
+    description: '',
     imageUrl: null,
   },
   {
-    name: '마일스',
+    name: 'DD',
     position: POSITION.USER,
-    job: JOB.FULLSTACk,
-    description:
-      '안녕하세요! 백엔드 개발자 마일스입니다. 빠르게 제품을 만드는 것에 관심이 많아요. 스터디해서 함께 실력 늘려가면 좋겠어요!',
-    imageUrl: null,
+    job: JOB.FRONTEND,
+    description: '',
+    imageUrl: '/assets/image/people/dd.jpg',
   },
   {
-    name: '비트',
+    name: 'GLee',
     position: POSITION.USER,
-    job: JOB.BACKEND,
-    description: '안녕하세요. 백엔드 개발자 비트입니다!',
+    job: JOB.FRONTEND,
+    description: '',
     imageUrl: null,
   },
   {
-    name: 'Sean',
+    name: 'Grace',
+    position: POSITION.USER,
+    job: JOB.FRONTEND,
+    description: '',
+    imageUrl: null,
+  },
+  {
+    name: 'Hyun',
+    position: POSITION.USER,
+    job: JOB.FRONTEND,
+    description: '프론트 말고도 이것저것 관심이 많은 3년차 프론트엔드 개발자 Hyun입니다😃',
+    imageUrl: null,
+  },
+  {
+    name: 'Leo',
+    position: POSITION.USER,
+    job: JOB.FRONTEND,
+    description: '',
+    imageUrl: '/assets/image/people/leo.png',
+  },
+  {
+    name: 'Sue',
     position: POSITION.USER,
     job: JOB.FRONTEND,
     description:
-      '안녕하세요, 프론트엔드 개발자 션입니다. 같이 모각코도 하고 인사이트도 나누고, 서로의 발전 동력이 되면 좋겠습니다.',
+      '안녕하세요! FE개발하고있는 Sue입니다 :)\n코탐 활동으로 직군별 연차별 여러 분들과 소통하고 개발생활에 많은 자극받고있습니다. 자주뵈어요😄',
     imageUrl: null,
   },
 ] as const;
