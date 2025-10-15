@@ -18,6 +18,7 @@ export const JOB = {
   APP: 'App',
   DESIGNER: 'Designer',
   AI: 'AI',
+  DEV_OPS: 'DevOps',
 } as const;
 
 export const positionMap = {

@@ -56,7 +56,7 @@ export const playerList: Member[] = [
   {
     name: '마일스',
     position: POSITION.USER,
-    job: JOB.FULLSTACk,
+    job: JOB.BACKEND,
     description:
       '안녕하세요! 백엔드 개발자 마일스입니다. 빠르게 제품을 만드는 것에 관심이 많아요. 스터디해서 함께 실력 늘려가면 좋겠어요!',
     imageUrl: null,
@@ -94,7 +94,7 @@ export const playerList: Member[] = [
   {
     name: '신수',
     position: POSITION.USER,
-    job: JOB.FRONTEND,
+    job: JOB.BACKEND,
     description: '',
     imageUrl: null,
   },
@@ -152,7 +152,7 @@ export const playerList: Member[] = [
   {
     name: '진코',
     position: POSITION.USER,
-    job: JOB.FRONTEND,
+    job: JOB.APP,
     description: '',
     imageUrl: null,
   },
@@ -208,14 +208,14 @@ export const playerList: Member[] = [
   {
     name: 'GLee',
     position: POSITION.USER,
-    job: JOB.FRONTEND,
+    job: JOB.FULLSTACk,
     description: '',
     imageUrl: null,
   },
   {
     name: 'Grace',
     position: POSITION.USER,
-    job: JOB.FRONTEND,
+    job: JOB.DEV_OPS,
     description: '',
     imageUrl: null,
   },
